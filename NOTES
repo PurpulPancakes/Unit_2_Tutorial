@@ -1,0 +1,266 @@
+Students will create an array using the days of the month
+
+The calendar should appear in the form of a web table with links to specific events places within the table cells
+Appearance and placement of the calendar will be set using the CSS style sheet
+The program create should be easily adaptable so that it can be used to create other monthly calendars
+
+Names of IDs assigned to the different parts of the table
+    The entire calendar is set in a web table with the ID calender_table
+    Cell containing the calendar title has the ID calendar_head
+    Seven cells containing the days of the week abbreviations all belong to the class calendar_weekdays
+    All cells containing the dates of the month belong to the class calendar_dates
+    The cell containing the current date has the ID calandar_today
+Class and ID designations make it easier for page developers to assign different styles to other different parts of the calendar
+
+getMonth() method: extracts a month number
+getFullYear() method: extracts four-digit year value
+The Date method does not return the name of the month
+One way to associate each month number with a month is by using an array
+
+Array: A collection of values organized under a single name
+Index: The number that each individual value is associated with and that distinguishes it from other values in the array
+Array values are referenced using the expression array[i]
+Where array is the name of the array and i is the index of a specific value in the array
+
+Index values start with 0 so that the initial item in an array has an index value of 0
+
+To create an array, apply the object constructor where array is the name of the object and the length is the parameters
+The length value is optional; if the length parameter is omitted then the array expands automatically as more items are added to it
+
+An array can be populated with values by specifying both the array name and the index number of the array item
+Command to the set the value of a specific item in an array
+Array[i] = value;
+Where value is the value assigned to the array item with the index value i
+
+pooop lol
+
+Populate the enitre array in a single statement using the following command:
+    Var array = new Array(values);
+
+Array literal: Creates an array in which the array values are a comma-separated list within a set of brackets;
+    Var array = [values];
+
+Array values need not be of the same data type
+Mix of numeric values, text strings, and other data types within a single array is allowed
+
+JavaScript array automatically expands in length as more items are added
+Apply the following length property to determine the array's current size
+    array.length;
+The value returned by the length property is equal to one more than the highest index number in the array
+
+Sparse array: Creates in JavaScript in which some of the array values are undefined
+The length value is not always the same as the number of array values
+Occurs frequently in database applications
+Value of the length property cannot be reduced without removing items from the end of the array
+
+Items are placed in an array either in the order in which they are defined or explicitly by index number, by default
+JavaScript supports two methods for changing the order of the array items
+    reverse()
+    sort()
+
+Reverse(): reverses the order of items in an array, making the last items first and the first items last
+Sort(): Rearranges array items in alphabetical order
+The sort() method when applied to umeric values will sort the values in order by their leading digits, rather than by their numerical values
+
+Based on comparison of two adjacent array item values, the function returns a negative, positive, or zero value
+    If a negative value is returned, then a is placed before b
+    If a positive value is returned, then b is placed before a
+    If a zero value is returned, a and b retain their original prositions
+
+Function to sort numeric values in ascending order
+    function ascending(a, b) {
+        return a - b;
+    }
+Function to sort numeric values in descending order
+    function descending(a, b) {
+        return a - b;
+    }
+
+The compare function is applied to the sort() method as follows
+    array.sort(fname);
+Where fname is the name of the compare function
+Example:
+    monthName.sort(ascending);
+
+splice(): Removes and inserts array items
+    array.splice(start, size, values);
+
+If no values are specified, the splice method simply removes items from the array
+Always alters the original array
+
+Stack: Arrays can be used to store information in a data structure
+New items are added to the top of the stack or to the end of the array
+A stack data structure employs the last-in first-out (LIFO principle)
+In the LIFO principle the last items added to the stack are the first ones removed
+
+push() method: appends new items to the end of an array
+    array.push(values);
+Where values is a comma separated list of values to be appended to the end of the array
+
+pop() method: removes or unstacks the last item
+    array.pop();
+
+Queue: Emplys the first-in-first-out (FIFO) principle in which the first item added to the data list is the first removed
+Similar to a stack
+shift() method: removes the first array item
+unshift() method: Inserts new items at the front of the array
+
+copyWithin(target, start[,end])
+    Copies items within the array to the target index, starting with the start index and ending with the optional end index
+concat(array1, array2, ...)
+    Joins the array to two or more arrays, creating a single array containing the items from all the arrays
+Fill(value[,start][,end])
+    Fills the array with items having the value, starting from start index and ending at the end index
+indexOf(value [,start])
+    Searches the array, returning the index number of the first element equal to value, starting from the optional start index
+join(separator)
+    Joins all items in the array into a single text string; the array items are separated using the text in the separator parameter; if no separator is specified, a comma is used
+lastIndexOf(value [,start])
+    Searches backwards throught the array, returning the index number of the first element equal to the value, starting from the optional start index
+pop()
+push(values)
+reverse()
+shift()
+slice(start, stop)
+splice(start, size, values)
+sort(fname)
+toString()
+unshift(values)
+
+array.split( "string" )
+Create an array from an existing array every time "string" happens
+
+Program loop: set of commands executed repeatedly until stopping condition is met
+Two most commonly used program loops in JS are
+    for loops
+    while loops
+
+In a for loop, a variable known as a counter variable is used to track the number of times a block of commands is run
+When the counter variable reaches or exceeds a specified value, the for loop stops
+General structure of a for loop
+for(start; continue; update) {commands}
+
+Students will use conditionals, loops, and arrays to build a complete calendar on a website.
+
+While loop: Command block that is tun as long as a specific condition is met
+Condition in a while loop does not depend on the value of a counter variable
+General syntax for the while loop
+    while(bool === true){
+        commands
+    }
+
+do/while loop: Generally used when the programming loop should run at least once before testing stopping condition
+Tests the condition to continue the loop right after the latest command block is run
+Structure of the do/while loop
+    do{
+        commands
+    }while (bool === true);
+
+Comparison Operator: Compares the value of one expression to another returning a boolean value indicating whether the comparison is true or false
+
+==
+    Tests whether x is equal in value to year
+===
+    Tests whether x is equal in value to y AND has the same data type
+!=
+    Tests whether x is not equal to y
+>,>=,<,<=
+    Tests x is greater, less and/or equal to y
+
+Logical Operators allow several expressions to be connected
+
+&& means and
+|| means or
+! means not
+
+Program loops: CYcle Through different values conatined within an array
+General structure to access each value from an array using a for a loop
+    for(var i = 0; i < Array.length; i++){
+        commands involving array[i];
+    }
+
+JavaScript supports several methods to loop through the contents of an array without having to create a program loop structure
+Each of these methods is based on calling a function that will be applied to each item in the array
+
+The general syntax
+    Array.method(callback[thisArg])
+Where callback is the name of the function that will be applied to each array item
+thisArg: A callback optional argument that can be included to pass a value to the function
+
+General syntax of the callback function
+    function callback(value[index/array]){
+        commands
+    }
+Where value is the value of the array item during each pass through the array, index is the numeric index of the current array item, and array is the name of the array
+Only the value parameter is required, the rest are optional
+
+forEach() method: runs a function for each item in the array
+General syntax
+    Array.forEach(callback[arg])
+Where callback is the function that is applied to each item in the array
+
+map() method: The function is calls returns a value that can be used to map the contents of an existing array into a new array
+    var x = [3,8,12]
+    var y = x.map(doubleIt);
+    function doubleIt(value){
+        return 2*value;
+    }
+
+Filter() method: Extracts array items that match some specified condition
+    array.filter(callback[arg])
+Where callback is a function that returned a Boolean value of true or false or each item in array
+Array items that return a value of true are copied into the new array
+
+every() method: Returns a the value true if every item in the array matched the condition specified by the callback function; if otherwise, returns false
+some() method: Returns a value of true if some array items match a condition specified in the function but otherwise returns false if none of that array items match the condition specified in the function
+
+reduce(callback[arg])
+    Reduces array by keeping only those items that return a value from the callback function
+reduceRight(callback[arg])
+    Reduces array from the last element by keeping only those items that returna value from the callback function
+find(callback[arg])
+    Returns the value of the first element in the array that passes a test in the callback function
+findIndex(callback[arg])
+    Returns the index of the first element in the array that passes a test in the callback function
+
+Parallel Array:
+    Each entry in the array matched or is parallel to an entry in the other array
+Conditional statement:
+    Runs a command or command block only when certain circumstances are met
+
+The most common conditional statement is the if statement
+General structure of the if statement
+    if(bool == true){
+        commands
+    }
+
+Conditional statement uses the same comparison and logical operators that are used with program loops
+Modulus Operator: %
+    Returns the integer remainder after diving one integer by another
+
+One if statement is nested inside another
+
+If else statement: Chooses between alternate commands blocks
+If runs one command block if the conditional expression is true and a different command block if the expression is false
+General Structure
+    if(bool == true){
+        commands if true
+    }else{
+        commands if flase
+    }
+
+Break statement: Terminates any program loop or conditional statement
+Used anywhere within the program code
+When a break statement is encountered, control is passed to the statement immediately following it
+It is most often used to exit a program loop before the stopping condition is met
+
+Continue statement:
+Stops processing the commands in the current iteration of the loop and continues on to the next iteration
+It is used to jump out of the current iteration if a missing or null value is encountered
+
+Statement label:
+    Identifies statements in JavaScript code so they can be used elsewhere in a program
+    Syntax of the statement label
+        label: statements
+    Where label is the text of the label and statements are the statements identified by the label
+

@@ -16,7 +16,7 @@
 #calendar_table {
    background-color: rgb(231, 231, 231);  
    font-size: 0.9em; 
-   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   font-family: Comic Sans MS;
    width: 100%;
 
    box-shadow: rgb(51, 51, 51) 0px 0px 1px,
@@ -31,6 +31,8 @@
    padding-bottom: 20px; 
    font-size: 1.6em; 
    letter-spacing: 0.3em;
+   color: rgb(22, 6, 94);
+   text-shadow: red 1px 1px 0px, orange 2px 2px 0px, yellow 3px 3px 0px, green 4px 4px 0px, blue 5px 5px 0px, purple 6px 6px 0px;
 }
 
 .calendar_weekdays {
